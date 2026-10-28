@@ -183,94 +183,119 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
-  priceType: "close",
+  mode: "live",
+  asOf: "2026-10-28",
+  retrievedAt: "2026-10-28T11:51:00-04:00",
+  priceType: "intraday",
   companies: {
     NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:51 AM", price: 217.26 },
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "NVIDIA and Oracle Expand NVIDIA Vera Rubin to Multi-Gigawatt Scale and Bring NVIDIA Vera CPU to Oracle Cloud Infrastructure", source: "NVIDIA Newsroom (press release)", url: "https://nvidianews.nvidia.com/news/nvidia-and-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-and-bring-nvidia-vera-cpu-to-oracle-cloud-infrastructure", why: "Vera Rubin NVL72 systems are now generally available on Oracle's cloud, a sign the new platform is shipping to a major buyer at scale." },
+        { date: "2026-10-26", headline: "NVIDIA and Meta to Expand Collaboration on Muse and Muse Family of Models Amid Robust Growth", source: "NVIDIA Newsroom (press release)", url: "https://nvidianews.nvidia.com/news/nvidia-and-meta-to-expand-collaboration-on-muse-and-muse-family-of-models-amid-robust-growth", why: "Meta plans to use more NVIDIA hardware, and NVIDIA will invest $3 billion in Meta's equity offering, which ties a big customer closer but also links NVIDIA's money to its own demand." }
       ],
-      upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
+      upcoming: []
     },
     JPM: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 335.19 },
+        { date: "2026-10-22", close: 336.54 },
+        { date: "2026-10-23", close: 331.58 },
+        { date: "2026-10-26", close: 334.04 },
+        { date: "2026-10-27", close: 335.79 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:51 AM", price: 339.45 },
+      priceSource: "https://stockanalysis.com/stocks/jpm/history/",
       news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "Anthropic taps JPMorgan to lead IPO's U.S. retail sales, Bloomberg reports", source: "Investing.com (citing Bloomberg)", url: "https://www.investing.com/news/stock-market-news/anthropic-taps-jpmorgan-to-lead-ipos-us-retail-sales-bloomberg-reports-4977334", why: "A lead role selling a very large IPO to individual investors would bring underwriting fees and visibility to JPMorgan's wealth business." },
+        { date: "2026-10-27", headline: "JPMorgan says ex-banker Rana pushed sister, friend to lie to support sexual assault case", source: "Reuters via Investing.com", url: "https://www.investing.com/news/stock-market-news/jpmorgan-says-exbanker-rana-pushed-sister-friend-to-lie-to-support-sexual-assault-case-4976447", why: "JPMorgan asked a federal judge to dismiss the case; it is a reputational issue more than a financial one." },
+        { date: "2026-10-21", headline: "Jamie Dimon spent years warning about America's reliance on China. A year in, JPMorgan has put $230 billion behind fixing it", source: "Fortune", url: "https://fortune.com/2026/10/21/jamie-dimon-jpmorgan-china-critical-minerals-defense/", why: "Shows how the bank is steering lending and investment toward national-security sectors under its 10-year, $1.5 trillion plan." }
       ],
-      upcoming: []
+      upcoming: [
+        { date: "2026-10-28", event: "FOMC rate decision (Oct 27-28 meeting). Market-wide; matters most for bank margins.", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+        { date: "2026-10-31", event: "Quarterly dividend of $1.65 per share payable (record date Oct 6)", source: "JPMorganChase Investor Relations", url: "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15" }
+      ]
     },
     ACN: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
+        { date: "2026-10-21", close: 240.26 },
+        { date: "2026-10-22", close: 258.74 },
+        { date: "2026-10-23", close: 249.37 },
+        { date: "2026-10-26", close: 247.23 },
+        { date: "2026-10-27", close: 235.16 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [],
-      upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
-    },
-    DE: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:51 AM", price: 245.45 },
+      priceSource: "https://stockanalysis.com/stocks/acn/history/",
       news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "Accenture wins $151M Air Force ICBM engineering contract", source: "Investing.com", url: "https://www.investing.com/news/pro/accenture-wins-151m-air-force-icbm-engineering-contract-432SI-4977048", why: "A new federal defense award adds to Accenture's government backlog; the page gave only the headline, so details are unconfirmed." },
+        { date: "2026-10-23", headline: "Why is Accenture stock sliding today?", source: "Investing.com", url: "https://www.investing.com/news/stock-market-news/why-is-accenture-stock-sliding-today-93CH-4970187", why: "Shares fell about 4.6% midday after several insider sales and a Baird downgrade to Neutral on valuation, which shows how much the recent rally depends on sentiment." }
       ],
       upcoming: []
     },
-    LLY: {
+    COST: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
+        { date: "2026-10-21", close: 998.31 },
+        { date: "2026-10-22", close: 1018.21 },
+        { date: "2026-10-23", close: 1003.32 },
+        { date: "2026-10-26", close: 1005.16 },
+        { date: "2026-10-27", close: 992.13 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:51 AM", price: 982.16 },
+      priceSource: "https://stockanalysis.com/stocks/cost/history/",
       news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "Costco Remains a Defensive Compounder Awaiting Its Next Leg Up", source: "24/7 Wall St.", url: "https://247wallst.com/investing/2026/10/27/costco-remains-a-defensive-compounder-awaiting-its-next-leg-up/", why: "Opinion piece: strong renewals and cash flow, but a trailing P/E near 48 leaves little upside, so the author rates it a Hold." }
       ],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-10-30", event: "Dividend record date, $1.47 per share (payable Nov 13)", source: "Costco 8-K press release (SEC)", url: "https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000096/costex9918-k101426.htm" }
+      ]
+    },
+    LLY: {
+      closes: [
+        { date: "2026-10-21", close: 1270.75 },
+        { date: "2026-10-22", close: 1306.69 },
+        { date: "2026-10-23", close: 1273.46 },
+        { date: "2026-10-26", close: 1279.14 },
+        { date: "2026-10-27", close: 1281.91 }
+      ],
+      latest: { date: "2026-10-28", time: "11:50 AM", price: 1294.17 },
+      priceSource: "https://stockanalysis.com/stocks/lly/history/",
+      news: [
+        { date: "2026-10-28", headline: "Lilly's retatrutide delivered greater A1C reduction and more than double the weight loss of Ozempic's highest approved dose in head-to-head trial", source: "Eli Lilly press release (PR Newswire)", url: "https://www.prnewswire.com/news-releases/lillys-retatrutide-delivered-greater-a1c-reduction-and-more-than-double-the-weight-loss-of-ozempics-highest-approved-dose-in-head-to-head-trial-302921328.html", why: "A head-to-head win over Novo Nordisk's Ozempic strengthens the case for Lilly's next obesity and diabetes drug." },
+        { date: "2026-10-27", headline: "Patrik Jonsson to retire after 36 years; Ilya Yuffa named president, Lilly Global Markets", source: "Eli Lilly press release (PR Newswire)", url: "https://www.prnewswire.com/news-releases/patrik-jonsson-to-retire-after-36-years-ilya-yuffa-named-president-lilly-global-markets-302921191.html", why: "Lilly will combine its U.S. and international commercial businesses under one leader from Jan 1, 2027." },
+        { date: "2026-10-22", headline: "Lilly breaks ground in Richmond to expand American manufacturing of next-generation cancer medicines", source: "Eli Lilly press release (PR Newswire)", url: "https://www.prnewswire.com/news-releases/lilly-breaks-ground-in-richmond-to-expand-american-manufacturing-of-next-generation-cancer-medicines-advancing-its-build-out-of-10-new-us-sites-since-2020-302916266.html", why: "A $5 billion Virginia plant adds U.S. capacity as Lilly keeps spending heavily on manufacturing." }
+      ],
+      upcoming: [
+        { date: "2026-10-29", event: "Q3 2026 results; conference call 10 a.m. ET (confirmed by Lilly)", source: "Lilly press release via Finviz", url: "https://finviz.com/news/403165/lilly-confirms-date-and-conference-call-for-third-quarter-2026-financial-results-announcement" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "First live refresh. All sample data replaced with sourced data. Prices: last five completed closes (Oct 21 to Oct 27) plus an intraday price taken at about 11:51 AM ET on Oct 28.",
+      "Watchlist change: DE removed from the brief, COST added (follows the owner's WATCHLIST edit).",
+      "NVDA 221.97 to 217.26 (-2.1%); top news: NVIDIA to invest $3B in Meta's equity offering and expand the Muse collaboration",
+      "JPM 335.19 to 339.45 (+1.3%); top news: Bloomberg reports Anthropic picked JPMorgan to lead its IPO's U.S. retail sales",
+      "ACN 240.26 to 245.45 (+2.2%); top news: shares slid Oct 23 on insider sales and a Baird downgrade",
+      "COST 998.31 to 982.16 (-1.6%); no major news (one opinion piece only)",
+      "LLY 1,270.75 to 1,294.17 (+1.8%); top news: retatrutide beat Ozempic in a head-to-head Phase 3 trial",
+      "Calendar added: FOMC decision Oct 28, LLY Q3 results Oct 29, COST dividend record date Oct 30, JPM dividend payable Oct 31.",
+      "Missing: no NVDA or ACN calendar items found for the next two weeks. NVIDIA has not announced its Q3 FY2027 earnings date. Costco's October sales release date could not be confirmed from Costco, so it is left out.",
+      "Missing: COST has only one news item; ACN's contract item comes from a headline-only page."
+    ],
+    note: "The Oct 28 prices are intraday from stockanalysis.com, not closes. Two snapshots look internally inconsistent: NVDA 217.26 is just below that page's listed day low (217.27), and JPM 339.45 is above its listed day high (338.98). Check both against a second quote. The ACN $151M Air Force contract came from a headline-only Investing.com page with no original source cited. The JPM Anthropic retail-IPO item is secondhand (Investing.com citing Bloomberg). Investing.com timestamps show no time zone."
+  },
   {
     date: "2026-10-16",
     summary: [
